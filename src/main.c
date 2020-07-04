@@ -6,51 +6,42 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/16 16:36:36 by mgena             #+#    #+#             */
-/*   Updated: 2020/03/16 16:54:48 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/04 14:55:06 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 #include <stdio.h>
 
-char **select_args(int argc, char **argv)
+t_selection	*get_arguments(int argc, char **argv)
 {
-	struct termios tty;
-	struct termios savetty;
+	t_selection	*res;
+	size_t		i;
+	char		*word;
 
-	if (!(isatty(0)))
+	i = 2;
+	res = NULL;
+	while (i < argc)
 	{
-		ft_printf("stdin not terminal\n");
-		exit(1);
+		word = ft_strdup(argv[i++]);
+		res = add_doubly_list(res, word, ft_strlen(word));
 	}
-	tcgetattr(0, &tty);
-	savetty = tty;
-	tty.c_lflag &= ~(ICANON|ECHO|ISIG);
-	tty.c_cc[VMIN] = 1;
-	tcsetattr(0, TCSAFLUSH, &tty);
-	return argv;
-
+	return (res);
 }
 
-void do_stuff()
+void		ft_select(int argc, char **argv)
 {
-	ft_printf()
+	t_selection *arguments;
+	char		**selections;
+
+	arguments = get_arguments(argc, argv);
+	selections = select_args(arguments);
 }
 
-void	ft_select(int argc, char **argv)
-{
-	char **selections;
-
-	do_stuff()
-//	selections = select_args(argc, &argv[2]);
-//	execute_command(argv[1], selections);
-}
-
-int		main(int argc, char **argv)
+int			main(int argc, char **argv)
 {
 	if (argc <= 2)
 		ft_printf("ft_select: to few arguments");
 	else
 		ft_select(argc, argv);
 }
-

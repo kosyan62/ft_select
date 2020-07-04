@@ -95,4 +95,4 @@ add_executable(ft_select
         includes/libft/ft_wordcount.c
         includes/libft/get_next_line.c
         includes/header.h
-        src/main.c)
+        src/main.c src/two_side_list.c src/select_args.c src/support.c src/draw.c)

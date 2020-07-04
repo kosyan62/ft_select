@@ -267,7 +267,23 @@ CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_functions.c.o: ../includ
 CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_init.c.o: ../includes/libft/includes/libft.h
 CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_init.c.o: ../includes/libft/hash_table/hash_init.c
 
+CMakeFiles/ft_select.dir/src/draw.c.o: ../includes/header.h
+CMakeFiles/ft_select.dir/src/draw.c.o: ../includes/libft/includes/libft.h
+CMakeFiles/ft_select.dir/src/draw.c.o: ../src/draw.c
+
 CMakeFiles/ft_select.dir/src/main.c.o: ../includes/header.h
 CMakeFiles/ft_select.dir/src/main.c.o: ../includes/libft/includes/libft.h
 CMakeFiles/ft_select.dir/src/main.c.o: ../src/main.c
+
+CMakeFiles/ft_select.dir/src/select_args.c.o: ../includes/header.h
+CMakeFiles/ft_select.dir/src/select_args.c.o: ../includes/libft/includes/libft.h
+CMakeFiles/ft_select.dir/src/select_args.c.o: ../src/select_args.c
+
+CMakeFiles/ft_select.dir/src/support.c.o: ../includes/header.h
+CMakeFiles/ft_select.dir/src/support.c.o: ../includes/libft/includes/libft.h
+CMakeFiles/ft_select.dir/src/support.c.o: ../src/support.c
+
+CMakeFiles/ft_select.dir/src/two_side_list.c.o: ../includes/header.h
+CMakeFiles/ft_select.dir/src/two_side_list.c.o: ../includes/libft/includes/libft.h
+CMakeFiles/ft_select.dir/src/two_side_list.c.o: ../src/two_side_list.c
 

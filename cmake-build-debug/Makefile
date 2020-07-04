@@ -2364,6 +2364,33 @@ includes/libft/hash_table/hash_init.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_init.c.s
 .PHONY : includes/libft/hash_table/hash_init.c.s
 
+src/draw.o: src/draw.c.o
+
+.PHONY : src/draw.o
+
+# target to build an object file
+src/draw.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/draw.c.o
+.PHONY : src/draw.c.o
+
+src/draw.i: src/draw.c.i
+
+.PHONY : src/draw.i
+
+# target to preprocess a source file
+src/draw.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/draw.c.i
+.PHONY : src/draw.c.i
+
+src/draw.s: src/draw.c.s
+
+.PHONY : src/draw.s
+
+# target to generate assembly for a file
+src/draw.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/draw.c.s
+.PHONY : src/draw.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -2390,6 +2417,87 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/select_args.o: src/select_args.c.o
+
+.PHONY : src/select_args.o
+
+# target to build an object file
+src/select_args.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/select_args.c.o
+.PHONY : src/select_args.c.o
+
+src/select_args.i: src/select_args.c.i
+
+.PHONY : src/select_args.i
+
+# target to preprocess a source file
+src/select_args.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/select_args.c.i
+.PHONY : src/select_args.c.i
+
+src/select_args.s: src/select_args.c.s
+
+.PHONY : src/select_args.s
+
+# target to generate assembly for a file
+src/select_args.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/select_args.c.s
+.PHONY : src/select_args.c.s
+
+src/support.o: src/support.c.o
+
+.PHONY : src/support.o
+
+# target to build an object file
+src/support.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support.c.o
+.PHONY : src/support.c.o
+
+src/support.i: src/support.c.i
+
+.PHONY : src/support.i
+
+# target to preprocess a source file
+src/support.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support.c.i
+.PHONY : src/support.c.i
+
+src/support.s: src/support.c.s
+
+.PHONY : src/support.s
+
+# target to generate assembly for a file
+src/support.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support.c.s
+.PHONY : src/support.c.s
+
+src/two_side_list.o: src/two_side_list.c.o
+
+.PHONY : src/two_side_list.o
+
+# target to build an object file
+src/two_side_list.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/two_side_list.c.o
+.PHONY : src/two_side_list.c.o
+
+src/two_side_list.i: src/two_side_list.c.i
+
+.PHONY : src/two_side_list.i
+
+# target to preprocess a source file
+src/two_side_list.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/two_side_list.c.i
+.PHONY : src/two_side_list.c.i
+
+src/two_side_list.s: src/two_side_list.c.s
+
+.PHONY : src/two_side_list.s
+
+# target to generate assembly for a file
+src/two_side_list.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/two_side_list.c.s
+.PHONY : src/two_side_list.c.s
 
 # Help Target
 help:
@@ -2649,9 +2757,21 @@ help:
 	@echo "... includes/libft/hash_table/hash_init.o"
 	@echo "... includes/libft/hash_table/hash_init.i"
 	@echo "... includes/libft/hash_table/hash_init.s"
+	@echo "... src/draw.o"
+	@echo "... src/draw.i"
+	@echo "... src/draw.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/select_args.o"
+	@echo "... src/select_args.i"
+	@echo "... src/select_args.s"
+	@echo "... src/support.o"
+	@echo "... src/support.i"
+	@echo "... src/support.s"
+	@echo "... src/two_side_list.o"
+	@echo "... src/two_side_list.i"
+	@echo "... src/two_side_list.s"
 .PHONY : help
 
 

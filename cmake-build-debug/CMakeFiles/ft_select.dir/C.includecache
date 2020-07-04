@@ -9,6 +9,16 @@
 ../includes/header.h
 libft.h
 ../includes/libft.h
+unistd.h
+-
+fcntl.h
+-
+termios.h
+-
+sys/ioctl.h
+-
+stdbool.h
+-
 
 ../includes/libft/includes/libft.h
 unistd.h
@@ -16,7 +26,25 @@ unistd.h
 stdlib.h
 -
 
+/Users/mgena/projects/ft_select/src/draw.c
+header.h
+/Users/mgena/projects/ft_select/src/header.h
+
 /Users/mgena/projects/ft_select/src/main.c
+header.h
+/Users/mgena/projects/ft_select/src/header.h
+stdio.h
+-
+
+/Users/mgena/projects/ft_select/src/select_args.c
+header.h
+/Users/mgena/projects/ft_select/src/header.h
+
+/Users/mgena/projects/ft_select/src/support.c
+header.h
+/Users/mgena/projects/ft_select/src/header.h
+
+/Users/mgena/projects/ft_select/src/two_side_list.c
 header.h
 /Users/mgena/projects/ft_select/src/header.h
 
