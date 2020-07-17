@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:46:29 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/04 16:41:46 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/04 16:56:31 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,46 +14,19 @@
 
 int		set_selection(t_selection *s, const char ch)
 {
-	ft_printf("%d", ch);
 	if (ch == 10)
 		return (1);
 	if (ch == 27)
+	{
+		ft_printf("%c[?25h", 27);
 		exit(0);
+	}
 	else if (ch == 32)
 		while (!s->under_cursor)
 			s = s->next;
 		s->selected = !s->selected;
 	return (0);
 
-}
-
-void move_cursor(t_selection **selection, const char key[4])
-{
-	t_selection *cpy;
-
-	cpy = *selection;
-	while (!cpy->under_cursor)
-		cpy = cpy->next;
-	if (key[0] == 27 && key[1] == 91)
-	{
-		if (key[2] == 68)
-		{
-			cpy->under_cursor = false;
-			cpy->prev->under_cursor = true;
-		}
-		else if (key[2] == 67)
-		{
-			cpy->under_cursor = false;
-			cpy->next->under_cursor = true;
-		}
-		else if (key[2] == 51 && key[3] == 126)
-		{
-			if (cpy == *selection)
-				*selection = cpy->next;
-			cpy->next->under_cursor = true;
-			del_double_list_item(cpy);
-		}
-	}
 }
 
 char	**get_args_array(t_selection *selection)
@@ -101,7 +74,7 @@ char	**select_args(t_selection *selections)
 	tty.c_cc[VMIN] = 1;
 	tcsetattr(0, TCSAFLUSH, &tty);
 	res = choose_args(selections);
-	ft_printf("%c[?25h", 27);
 	tcsetattr(0, TCSAFLUSH, &savetty);
+	ft_printf("%c[?25h", 27);
 	return (res);
 }

@@ -19,7 +19,7 @@ t_selection	*get_arguments(int argc, char **argv)
 	size_t		i;
 	char		*word;
 
-	i = 2;
+	i = 1;
 	res = NULL;
 	while (i < argc)
 	{

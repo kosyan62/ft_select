@@ -346,6 +346,9 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/includes/libftprintf.h">
 			<Option target="ft_select"/>
 		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/src/cursor.c">
+			<Option target="ft_select"/>
+		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/draw.c">
 			<Option target="ft_select"/>
 		</Unit>

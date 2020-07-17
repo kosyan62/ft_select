@@ -87,6 +87,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mgena/projects/ft_select/includes/libft/get_next_line.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/get_next_line.c.o"
   "/Users/mgena/projects/ft_select/includes/libft/hash_table/hash_functions.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_functions.c.o"
   "/Users/mgena/projects/ft_select/includes/libft/hash_table/hash_init.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_init.c.o"
+  "/Users/mgena/projects/ft_select/src/cursor.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/cursor.c.o"
   "/Users/mgena/projects/ft_select/src/draw.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/draw.c.o"
   "/Users/mgena/projects/ft_select/src/main.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/main.c.o"
   "/Users/mgena/projects/ft_select/src/select_args.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/select_args.c.o"

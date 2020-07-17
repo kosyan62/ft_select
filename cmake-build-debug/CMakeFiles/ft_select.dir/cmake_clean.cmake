@@ -82,6 +82,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_select.dir/includes/libft/get_next_line.c.o"
   "CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_functions.c.o"
   "CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_init.c.o"
+  "CMakeFiles/ft_select.dir/src/cursor.c.o"
   "CMakeFiles/ft_select.dir/src/draw.c.o"
   "CMakeFiles/ft_select.dir/src/main.c.o"
   "CMakeFiles/ft_select.dir/src/select_args.c.o"

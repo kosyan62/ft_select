@@ -2364,6 +2364,33 @@ includes/libft/hash_table/hash_init.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/hash_table/hash_init.c.s
 .PHONY : includes/libft/hash_table/hash_init.c.s
 
+src/cursor.o: src/cursor.c.o
+
+.PHONY : src/cursor.o
+
+# target to build an object file
+src/cursor.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/cursor.c.o
+.PHONY : src/cursor.c.o
+
+src/cursor.i: src/cursor.c.i
+
+.PHONY : src/cursor.i
+
+# target to preprocess a source file
+src/cursor.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/cursor.c.i
+.PHONY : src/cursor.c.i
+
+src/cursor.s: src/cursor.c.s
+
+.PHONY : src/cursor.s
+
+# target to generate assembly for a file
+src/cursor.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/cursor.c.s
+.PHONY : src/cursor.c.s
+
 src/draw.o: src/draw.c.o
 
 .PHONY : src/draw.o
@@ -2757,6 +2784,9 @@ help:
 	@echo "... includes/libft/hash_table/hash_init.o"
 	@echo "... includes/libft/hash_table/hash_init.i"
 	@echo "... includes/libft/hash_table/hash_init.s"
+	@echo "... src/cursor.o"
+	@echo "... src/cursor.i"
+	@echo "... src/cursor.s"
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"

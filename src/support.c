@@ -19,3 +19,9 @@ struct winsize	get_winsize(void)
 	ioctl(STDIN_FILENO, TIOCGWINSZ, &ws);
 	return (ws);
 }
+
+void 			escape(void)
+{
+	restart_term();
+	exit(0);
+}
