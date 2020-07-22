@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/16 16:36:36 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/04 14:55:06 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/21 16:01:41 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,22 @@ void		ft_select(int argc, char **argv)
 
 	arguments = get_arguments(argc, argv);
 	selections = select_args(arguments);
+	while (*selections)
+	{
+		ft_printf("%s ", *selections);
+		selections++;
+	}
 }
 
 int			main(int argc, char **argv)
 {
-	if (argc <= 2)
-		ft_printf("ft_select: to few arguments");
-	else
-		ft_select(argc, argv);
+//	if (argc <= 2)
+//		ft_printf("ft_select: to few arguments");
+//	else
+//		ft_select(argc, argv);
+	int  fd;
+	fd = open(ttyname(STDOUT_FILENO), O_WRONLY);
+	write(fd, "!!!!", 4);
+	ft_printf("you suck");
+
 }
