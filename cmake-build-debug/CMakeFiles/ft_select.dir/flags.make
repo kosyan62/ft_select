@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/mgena/projects/ft_select/includes -I/Users/mgena/projects/ft_select/includes/libft/includes 
+C_INCLUDES = -I/Users/mgena/projects/ft_select/includes -I/Users/mgena/projects/ft_select/includes/libft 
 

@@ -11,6 +11,23 @@
 # include <termios.h>
 # include <sys/ioctl.h>
 # include <stdbool.h>
+# include <curses.h>
+# include <term.h>
+
+typedef struct	s_outputs
+{
+	char	tbuf[2048];
+	char	strings[256];
+	char	*p;
+	char	*tname;
+	char	*CL;
+	char	*UL;
+	char	*NORM;
+	char	*RV;
+	char	*VI;
+	char	*VE;
+	int		fd;
+}				t_outputs;
 
 typedef struct	s_selection
 {
@@ -26,10 +43,18 @@ typedef struct	s_selection
 t_selection		*add_doubly_list(t_selection *lst, char *word, size_t len);
 void			move_cursor(t_selection **selection, const char key[4]);
 void			del_double_list_item(t_selection *lst);
-char			**select_args(t_selection *selections);
-void			draw_selections(t_selection *selection);
+void			del_whole_list(t_selection *lst);
+char			*select_args(t_selection *selections, t_outputs out);
+void			draw_selections(t_selection *selection, t_outputs out);
 struct winsize	get_winsize(void);
 void			restart_term();
 void 			escape();
+void			tinit(t_outputs *out);
+void 			clearscreen(void);
+void			underline_text(void);
+void			reverse_video_text(void);
+void			normal_text(void);
+void			invisible_cursor(void);
+void			visible_cursor(void);
 
 #endif //FT_SELECT_HEADER_H

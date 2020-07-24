@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 14:53:03 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/14 16:57:11 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/24 17:04:38 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,4 +53,9 @@ void del_double_list_item(t_selection *lst)
 	lst = NULL;
 	if (flag)
 		escape();
+}
+
+void del_whole_list(t_selection *lst)
+{
+
 }

@@ -4,41 +4,24 @@ project(ft_select C)
 set(CMAKE_C_STANDARD 11)
 
 include_directories(includes)
-include_directories(includes/libft/includes)
+include_directories(includes/libft)
 
 add_executable(ft_select
-        includes/libft/ft_printf/colour_extra.c
-        includes/libft/ft_printf/ft_for_p.c
-        includes/libft/ft_printf/ft_itoa_base.c
-        includes/libft/ft_printf/ft_new.c
-        includes/libft/ft_printf/ft_printf.c
-        includes/libft/ft_printf/ldbl_copy.c
-        includes/libft/ft_printf/ldbl_extract.c
-        includes/libft/ft_printf/long_math.c
-        includes/libft/ft_printf/percent.c
-        includes/libft/ft_printf/rounding.c
-        includes/libft/ft_printf/type_c.c
-        includes/libft/ft_printf/type_i_d.c
-        includes/libft/ft_printf/type_s.c
-        includes/libft/hash_table/hash_functions.c
-        includes/libft/hash_table/hash_init.c
-        includes/libft/includes/get_next_line.h
-        includes/libft/includes/ldbl_header.h
-        includes/libft/includes/libft.h
-        includes/libft/includes/libftprintf.h
-        includes/libft/errors.c
+        includes/libft/colour_extra.c
         includes/libft/ft_abortalloc.c
         includes/libft/ft_atoi.c
         includes/libft/ft_atol.c
         includes/libft/ft_bzero.c
         includes/libft/ft_countdigits.c
+        includes/libft/ft_fdprintf.c
+        includes/libft/ft_for_p.c
         includes/libft/ft_isalnum.c
         includes/libft/ft_isalpha.c
         includes/libft/ft_isascii.c
         includes/libft/ft_isdigit.c
         includes/libft/ft_isprint.c
-        includes/libft/ft_isspace.c
         includes/libft/ft_itoa.c
+        includes/libft/ft_itoa_base.c
         includes/libft/ft_lstadd.c
         includes/libft/ft_lstdel.c
         includes/libft/ft_lstdelone.c
@@ -53,7 +36,8 @@ add_executable(ft_select
         includes/libft/ft_memdel.c
         includes/libft/ft_memmove.c
         includes/libft/ft_memset.c
-        includes/libft/ft_pow.c
+        includes/libft/ft_new.c
+        includes/libft/ft_printf.c
         includes/libft/ft_putchar.c
         includes/libft/ft_putchar_fd.c
         includes/libft/ft_putendl.c
@@ -62,7 +46,6 @@ add_executable(ft_select
         includes/libft/ft_putnbr_fd.c
         includes/libft/ft_putstr.c
         includes/libft/ft_putstr_fd.c
-        includes/libft/ft_realloc.c
         includes/libft/ft_strcat.c
         includes/libft/ft_strchr.c
         includes/libft/ft_strclen.c
@@ -93,6 +76,24 @@ add_executable(ft_select
         includes/libft/ft_tolower.c
         includes/libft/ft_toupper.c
         includes/libft/ft_wordcount.c
-        includes/libft/get_next_line.c
+        includes/libft/get_next_line.h
+        includes/libft/hash_functions.c
+        includes/libft/hash_init.c
+        includes/libft/ldbl_copy.c
+        includes/libft/ldbl_extract.c
+        includes/libft/ldbl_header.h
+        includes/libft/libft.h
+        includes/libft/libftprintf.h
+        includes/libft/long_math.c
+        includes/libft/percent.c
+        includes/libft/rounding.c
+        includes/libft/type_c.c
+        includes/libft/type_i_d.c
+        includes/libft/type_s.c
         includes/header.h
-        src/main.c src/two_side_list.c src/select_args.c src/support.c src/draw.c src/cursor.c)
+        src/cursor.c
+        src/draw.c
+        src/main.c
+        src/select_args.c
+        src/support.c
+        src/two_side_list.c includes/libft/termcap_extra.c)

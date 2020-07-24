@@ -6,19 +6,19 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:46:29 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/21 14:33:43 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/24 16:56:14 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 
-int		set_selection(t_selection *s, const char ch)
+int		set_selection(t_selection *s, const char ch, int fd)
 {
 	if (ch == 10)
 		return (1);
 	if (ch == 27)
 	{
-		ft_printf("%c[?25h", 27);
+		ft_fdprintf(fd, "%c[?25h", 27);
 		exit(0);
 	}
 	else if (ch == 32)
@@ -29,13 +29,15 @@ int		set_selection(t_selection *s, const char ch)
 
 }
 
-char	**get_args_array(t_selection *selection)
+char	*get_args_array(t_selection *selection)
 {
 	t_selection *cpy;
-	char **res;
+	char *res;
+	char *tmp;
 	size_t len;
 	size_t i;
 
+	res = ft_strdup("");
 	len = 1;
 	cpy = selection;
 	selection = selection->next;
@@ -44,39 +46,40 @@ char	**get_args_array(t_selection *selection)
 		len++;
 		selection = selection->next;
 	}
-	res = ft_memalloc((len + 1) * sizeof(char*));
 	i = 0;
 	while (i != len)
 	{
 		if (selection->selected)
-			res[i++] = ft_strdup(selection->word);
+		{
+			tmp = ft_strjoin(res, selection->word);
+			free(res);
+			res = tmp;
+			tmp = ft_strjoin(res, " ");
+			free(res);
+			res = tmp;
+			i++;
+		}
 		else
 			len--;
 		selection = selection->next;
 	}
-	res[i + 1] = NULL;
-//	i = 0;
-//	while (res[i])
-//	{
-//		ft_printf("%s ", res[i++]);
-//	}
 	return res;
 }
 
-char	**choose_args(t_selection *selection)
+char	*choose_args(t_selection *selection, t_outputs out)
 {
 	char	key[4];
 	int		read_bytes;
 
 	while (1)
 	{
-		ft_printf("%cc", 27);
-		draw_selections(selection);
-		ft_printf("%c[?25l", 27);
+		ft_putstr_fd(out.CL, out.fd);
+		draw_selections(selection, out);
+		ft_putstr_fd(out.VI, out.fd);
 		read_bytes = read(STDIN_FILENO, key, 4);
 		if (read_bytes == 1)
 		{
-			if (set_selection(selection, key[0]))
+			if (set_selection(selection, key[0], out.fd))
 				return (get_args_array(selection));
 		}
 		else
@@ -84,11 +87,11 @@ char	**choose_args(t_selection *selection)
 	}
 }
 
-char	**select_args(t_selection *selections)
+char	*select_args(t_selection *selections, t_outputs out)
 {
 	struct termios	tty;
 	struct termios	savetty;
-	char			**res;
+	char			*res;
 
 	if (!(isatty(0)))
 	{
@@ -100,9 +103,8 @@ char	**select_args(t_selection *selections)
 	tty.c_lflag &= ~(ICANON | ECHO | ISIG);
 	tty.c_cc[VMIN] = 1;
 	tcsetattr(0, TCSAFLUSH, &tty);
-	res = choose_args(selections);
-	ft_printf("%cc", 27);
-	ft_printf("%c[?25h", 27);
+	res = choose_args(selections, out);
+	ft_putstr_fd(out.VE, out.fd);
 	tcsetattr(0, TCSAFLUSH, &savetty);
 	return (res);
 }

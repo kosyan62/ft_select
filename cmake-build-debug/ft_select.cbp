@@ -45,7 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/mgena/projects/ft_select/includes"/>
-					<Add directory="/Users/mgena/projects/ft_select/includes/libft/includes"/>
+					<Add directory="/Users/mgena/projects/ft_select/includes/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -67,7 +67,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/mgena/projects/ft_select/includes"/>
-					<Add directory="/Users/mgena/projects/ft_select/includes/libft/includes"/>
+					<Add directory="/Users/mgena/projects/ft_select/includes/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -85,7 +85,7 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/header.h">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/errors.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/colour_extra.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_abortalloc.c">
@@ -103,6 +103,12 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_countdigits.c">
 			<Option target="ft_select"/>
 		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_fdprintf.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_for_p.c">
+			<Option target="ft_select"/>
+		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_isalnum.c">
 			<Option target="ft_select"/>
 		</Unit>
@@ -118,10 +124,10 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_isprint.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_isspace.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_itoa.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_itoa.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_itoa_base.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_lstadd.c">
@@ -166,46 +172,10 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_memset.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_pow.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_new.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/colour_extra.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/ft_for_p.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/ft_itoa_base.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/ft_new.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/ft_printf.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/ldbl_copy.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/ldbl_extract.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/long_math.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/percent.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/rounding.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/type_c.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/type_i_d.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf/type_s.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_printf.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_putchar.c">
@@ -230,9 +200,6 @@
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_putstr_fd.c">
-			<Option target="ft_select"/>
-		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_realloc.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_strcat.c">
@@ -325,25 +292,49 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ft_wordcount.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/get_next_line.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/get_next_line.h">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/hash_table/hash_functions.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/hash_functions.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/hash_table/hash_init.c">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/hash_init.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/includes/get_next_line.h">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ldbl_copy.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/includes/ldbl_header.h">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ldbl_extract.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/includes/libft.h">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/ldbl_header.h">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/includes/libftprintf.h">
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/libft.h">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/libftprintf.h">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/long_math.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/percent.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/rounding.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/termcap_extra.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/type_c.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/type_i_d.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/type_s.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/cursor.c">

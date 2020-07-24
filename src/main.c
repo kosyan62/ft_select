@@ -6,12 +6,17 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/16 16:36:36 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/21 16:01:41 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/24 17:02:55 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 #include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <string.h>
+#include <termcap.h>
+
 
 t_selection	*get_arguments(int argc, char **argv)
 {
@@ -32,26 +37,22 @@ t_selection	*get_arguments(int argc, char **argv)
 void		ft_select(int argc, char **argv)
 {
 	t_selection *arguments;
-	char		**selections;
+	char		*selections;
+	t_outputs	out;
 
+	out.fd = open(ttyname(STDIN_FILENO), O_RDWR);
+	tinit(&out);
 	arguments = get_arguments(argc, argv);
-	selections = select_args(arguments);
-	while (*selections)
-	{
-		ft_printf("%s ", *selections);
-		selections++;
-	}
+	selections = select_args(arguments, out);
+	ft_printf("%s", selections);
+	free(selections);
+	del_whole_list(arguments);
 }
 
 int			main(int argc, char **argv)
 {
-//	if (argc <= 2)
-//		ft_printf("ft_select: to few arguments");
-//	else
-//		ft_select(argc, argv);
-	int  fd;
-	fd = open(ttyname(STDOUT_FILENO), O_WRONLY);
-	write(fd, "!!!!", 4);
-	ft_printf("you suck");
-
+	if (argc <= 2)
+		ft_printf("ft_select: to few arguments");
+	else
+		ft_select(argc, argv);
 }
