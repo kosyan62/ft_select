@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:46:29 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/24 16:56:14 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/28 15:49:45 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,20 +71,26 @@ char	*choose_args(t_selection *selection, t_outputs out)
 	char	key[4];
 	int		read_bytes;
 
+	ft_putstr_fd(out.CL, out.fd);
 	while (1)
 	{
+		ft_bzero(key, 4);
+//		ft_putstr_fd(out.HO, out.fd);
 		ft_putstr_fd(out.CL, out.fd);
 		draw_selections(selection, out);
 		ft_putstr_fd(out.VI, out.fd);
 		read_bytes = read(STDIN_FILENO, key, 4);
-		if (read_bytes == 1)
+//		ft_fdprintf(out.fd, "|%d %d %d %d| rb: %d\n", key[0], key[1], key[2], key[3], read_bytes);
+//		sleep(5);
+		if (read_bytes == 1 && key[0] != 127)
 		{
 			if (set_selection(selection, key[0], out.fd))
 				return (get_args_array(selection));
 		}
 		else
-			move_cursor(&selection, key);
+			move_cursor(&selection, key, out);
 	}
+	return NULL;
 }
 
 char	*select_args(t_selection *selections, t_outputs out)

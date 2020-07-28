@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/16 16:36:36 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/24 17:02:55 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/26 14:36:07 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,10 @@ void		ft_select(int argc, char **argv)
 	t_selection *arguments;
 	char		*selections;
 	t_outputs	out;
+	char buf[1024];
+	t_selection *first;
 
+//	out.fd = open("debug.txt", O_CREAT|O_RDWR);
 	out.fd = open(ttyname(STDIN_FILENO), O_RDWR);
 	tinit(&out);
 	arguments = get_arguments(argc, argv);
@@ -47,6 +50,7 @@ void		ft_select(int argc, char **argv)
 	ft_printf("%s", selections);
 	free(selections);
 	del_whole_list(arguments);
+	close(out.fd);
 }
 
 int			main(int argc, char **argv)

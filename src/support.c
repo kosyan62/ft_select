@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:48:13 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/24 16:41:53 by mgena            ###   ########.fr       */
+/*   Updated: 2020/07/28 15:28:55 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,10 @@ struct winsize	get_winsize(void)
 	return (ws);
 }
 
-void 			escape(void)
+void 			escape(t_outputs out)
 {
-	restart_term();
+	ft_putstr_fd(out.CL, out.fd);
+	ft_putstr_fd(out.NORM, out.fd);
+	ft_putstr_fd(out.VE, out.fd);
 	exit(0);
 }
