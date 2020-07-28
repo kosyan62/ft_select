@@ -1162,18 +1162,18 @@ CMakeFiles/ft_select.dir/src/two_side_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/two_side_list.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/two_side_list.c -o CMakeFiles/ft_select.dir/src/two_side_list.c.s
 
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: CMakeFiles/ft_select.dir/flags.make
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/libft/termcap_extra.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o   -c /Users/mgena/projects/ft_select/includes/libft/termcap_extra.c
+CMakeFiles/ft_select.dir/src/termcap_extra.c.o: CMakeFiles/ft_select.dir/flags.make
+CMakeFiles/ft_select.dir/src/termcap_extra.c.o: ../src/termcap_extra.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ft_select.dir/src/termcap_extra.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/termcap_extra.c.o   -c /Users/mgena/projects/ft_select/src/termcap_extra.c
 
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mgena/projects/ft_select/includes/libft/termcap_extra.c > CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i
+CMakeFiles/ft_select.dir/src/termcap_extra.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_select.dir/src/termcap_extra.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mgena/projects/ft_select/src/termcap_extra.c > CMakeFiles/ft_select.dir/src/termcap_extra.c.i
 
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/includes/libft/termcap_extra.c -o CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s
+CMakeFiles/ft_select.dir/src/termcap_extra.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/termcap_extra.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/termcap_extra.c -o CMakeFiles/ft_select.dir/src/termcap_extra.c.s
 
 # Object files for target ft_select
 ft_select_OBJECTS = \
@@ -1262,7 +1262,7 @@ ft_select_OBJECTS = \
 "CMakeFiles/ft_select.dir/src/select_args.c.o" \
 "CMakeFiles/ft_select.dir/src/support.c.o" \
 "CMakeFiles/ft_select.dir/src/two_side_list.c.o" \
-"CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o"
+"CMakeFiles/ft_select.dir/src/termcap_extra.c.o"
 
 # External object files for target ft_select
 ft_select_EXTERNAL_OBJECTS =
@@ -1352,7 +1352,7 @@ ft_select: CMakeFiles/ft_select.dir/src/main.c.o
 ft_select: CMakeFiles/ft_select.dir/src/select_args.c.o
 ft_select: CMakeFiles/ft_select.dir/src/support.c.o
 ft_select: CMakeFiles/ft_select.dir/src/two_side_list.c.o
-ft_select: CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o
+ft_select: CMakeFiles/ft_select.dir/src/termcap_extra.c.o
 ft_select: CMakeFiles/ft_select.dir/build.make
 ft_select: CMakeFiles/ft_select.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking C executable ft_select"

@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/16 16:36:36 by mgena             #+#    #+#             */
-/*   Updated: 2020/07/24 17:02:55 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/11 16:25:21 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string.h>
 #include <termcap.h>
 
+int fd;
 
 t_selection	*get_arguments(int argc, char **argv)
 {
@@ -34,6 +35,21 @@ t_selection	*get_arguments(int argc, char **argv)
 	return (res);
 }
 
+void		winchhandler(int sig)
+{
+	t_outputs out;
+
+	if (sig == SIGWINCH)
+	{
+		out = out_storage(NULL);
+//		ft_putstr_fd(out.RC, out.fd);
+		ft_putstr_fd(out.HO, out.fd);
+		ft_putstr_fd(out.CD, out.fd);
+		draw_selections();
+//		ft_putstr_fd("!", out.fd);
+	}
+}
+
 void		ft_select(int argc, char **argv)
 {
 	t_selection *arguments;
@@ -42,15 +58,20 @@ void		ft_select(int argc, char **argv)
 
 	out.fd = open(ttyname(STDIN_FILENO), O_RDWR);
 	tinit(&out);
+	out_storage(&out);
 	arguments = get_arguments(argc, argv);
 	selections = select_args(arguments, out);
 	ft_printf("%s", selections);
 	free(selections);
 	del_whole_list(arguments);
+	close(out.fd);
+
+
 }
 
 int			main(int argc, char **argv)
 {
+	signal(SIGWINCH, winchhandler);
 	if (argc <= 2)
 		ft_printf("ft_select: to few arguments");
 	else

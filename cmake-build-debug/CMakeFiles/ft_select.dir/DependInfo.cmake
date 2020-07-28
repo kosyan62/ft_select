@@ -80,7 +80,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mgena/projects/ft_select/includes/libft/long_math.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/long_math.c.o"
   "/Users/mgena/projects/ft_select/includes/libft/percent.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/percent.c.o"
   "/Users/mgena/projects/ft_select/includes/libft/rounding.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/rounding.c.o"
-  "/Users/mgena/projects/ft_select/includes/libft/termcap_extra.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o"
   "/Users/mgena/projects/ft_select/includes/libft/type_c.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/type_c.c.o"
   "/Users/mgena/projects/ft_select/includes/libft/type_i_d.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o"
   "/Users/mgena/projects/ft_select/includes/libft/type_s.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/includes/libft/type_s.c.o"
@@ -89,6 +88,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mgena/projects/ft_select/src/main.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/main.c.o"
   "/Users/mgena/projects/ft_select/src/select_args.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/select_args.c.o"
   "/Users/mgena/projects/ft_select/src/support.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/support.c.o"
+  "/Users/mgena/projects/ft_select/src/termcap_extra.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/termcap_extra.c.o"
   "/Users/mgena/projects/ft_select/src/two_side_list.c" "/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles/ft_select.dir/src/two_side_list.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

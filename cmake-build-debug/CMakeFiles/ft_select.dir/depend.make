@@ -243,10 +243,6 @@ CMakeFiles/ft_select.dir/includes/libft/rounding.c.o: ../includes/libft/libft.h
 CMakeFiles/ft_select.dir/includes/libft/rounding.c.o: ../includes/libft/libftprintf.h
 CMakeFiles/ft_select.dir/includes/libft/rounding.c.o: ../includes/libft/rounding.c
 
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/header.h
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/libft/libft.h
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/libft/termcap_extra.c
-
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: ../includes/libft/libft.h
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: ../includes/libft/libftprintf.h
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: ../includes/libft/type_c.c
@@ -278,6 +274,10 @@ CMakeFiles/ft_select.dir/src/select_args.c.o: ../src/select_args.c
 CMakeFiles/ft_select.dir/src/support.c.o: ../includes/header.h
 CMakeFiles/ft_select.dir/src/support.c.o: ../includes/libft/libft.h
 CMakeFiles/ft_select.dir/src/support.c.o: ../src/support.c
+
+CMakeFiles/ft_select.dir/src/termcap_extra.c.o: ../includes/header.h
+CMakeFiles/ft_select.dir/src/termcap_extra.c.o: ../includes/libft/libft.h
+CMakeFiles/ft_select.dir/src/termcap_extra.c.o: ../src/termcap_extra.c
 
 CMakeFiles/ft_select.dir/src/two_side_list.c.o: ../includes/header.h
 CMakeFiles/ft_select.dir/src/two_side_list.c.o: ../includes/libft/libft.h

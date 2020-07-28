@@ -96,4 +96,4 @@ add_executable(ft_select
         src/main.c
         src/select_args.c
         src/support.c
-        src/two_side_list.c includes/libft/termcap_extra.c)
+        src/two_side_list.c src/termcap_extra.c)

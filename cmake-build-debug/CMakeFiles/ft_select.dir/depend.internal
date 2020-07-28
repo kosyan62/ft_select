@@ -243,10 +243,6 @@ CMakeFiles/ft_select.dir/includes/libft/rounding.c.o
  /Users/mgena/projects/ft_select/includes/libft/libft.h
  /Users/mgena/projects/ft_select/includes/libft/libftprintf.h
  /Users/mgena/projects/ft_select/includes/libft/rounding.c
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o
- ../includes/header.h
- ../includes/libft/libft.h
- /Users/mgena/projects/ft_select/includes/libft/termcap_extra.c
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o
  /Users/mgena/projects/ft_select/includes/libft/libft.h
  /Users/mgena/projects/ft_select/includes/libft/libftprintf.h
@@ -279,6 +275,10 @@ CMakeFiles/ft_select.dir/src/support.c.o
  ../includes/header.h
  ../includes/libft/libft.h
  /Users/mgena/projects/ft_select/src/support.c
+CMakeFiles/ft_select.dir/src/termcap_extra.c.o
+ ../includes/header.h
+ ../includes/libft/libft.h
+ /Users/mgena/projects/ft_select/src/termcap_extra.c
 CMakeFiles/ft_select.dir/src/two_side_list.c.o
  ../includes/header.h
  ../includes/libft/libft.h
