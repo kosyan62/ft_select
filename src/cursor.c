@@ -128,4 +128,3 @@ void delete_elem(t_selection **selection, t_outputs out)
 	if (del_double_list_item(cpy))
 		escape(out);
 }
-
