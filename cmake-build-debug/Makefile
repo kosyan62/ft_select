@@ -2175,6 +2175,33 @@ includes/libft/rounding.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/rounding.c.s
 .PHONY : includes/libft/rounding.c.s
 
+includes/libft/termcap_extra.o: includes/libft/termcap_extra.c.o
+
+.PHONY : includes/libft/termcap_extra.o
+
+# target to build an object file
+includes/libft/termcap_extra.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o
+.PHONY : includes/libft/termcap_extra.c.o
+
+includes/libft/termcap_extra.i: includes/libft/termcap_extra.c.i
+
+.PHONY : includes/libft/termcap_extra.i
+
+# target to preprocess a source file
+includes/libft/termcap_extra.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i
+.PHONY : includes/libft/termcap_extra.c.i
+
+includes/libft/termcap_extra.s: includes/libft/termcap_extra.c.s
+
+.PHONY : includes/libft/termcap_extra.s
+
+# target to generate assembly for a file
+includes/libft/termcap_extra.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s
+.PHONY : includes/libft/termcap_extra.c.s
+
 includes/libft/type_c.o: includes/libft/type_c.c.o
 
 .PHONY : includes/libft/type_c.o
@@ -2682,6 +2709,9 @@ help:
 	@echo "... includes/libft/rounding.o"
 	@echo "... includes/libft/rounding.i"
 	@echo "... includes/libft/rounding.s"
+	@echo "... includes/libft/termcap_extra.o"
+	@echo "... includes/libft/termcap_extra.i"
+	@echo "... includes/libft/termcap_extra.s"
 	@echo "... includes/libft/type_c.o"
 	@echo "... includes/libft/type_c.i"
 	@echo "... includes/libft/type_c.s"

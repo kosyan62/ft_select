@@ -87,6 +87,7 @@ add_executable(ft_select
         includes/libft/long_math.c
         includes/libft/percent.c
         includes/libft/rounding.c
+        includes/libft/termcap_extra.c
         includes/libft/type_c.c
         includes/libft/type_i_d.c
         includes/libft/type_s.c
@@ -96,4 +97,5 @@ add_executable(ft_select
         src/main.c
         src/select_args.c
         src/support.c
-        src/two_side_list.c src/termcap_extra.c)
+        src/termcap_extra.c
+        src/two_side_list.c)

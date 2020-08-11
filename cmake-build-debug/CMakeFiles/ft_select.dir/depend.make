@@ -243,6 +243,10 @@ CMakeFiles/ft_select.dir/includes/libft/rounding.c.o: ../includes/libft/libft.h
 CMakeFiles/ft_select.dir/includes/libft/rounding.c.o: ../includes/libft/libftprintf.h
 CMakeFiles/ft_select.dir/includes/libft/rounding.c.o: ../includes/libft/rounding.c
 
+CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/header.h
+CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/libft/libft.h
+CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/libft/termcap_extra.c
+
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: ../includes/libft/libft.h
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: ../includes/libft/libftprintf.h
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: ../includes/libft/type_c.c

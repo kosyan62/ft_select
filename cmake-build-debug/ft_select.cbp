@@ -325,6 +325,9 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/rounding.c">
 			<Option target="ft_select"/>
 		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/termcap_extra.c">
+			<Option target="ft_select"/>
+		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/type_c.c">
 			<Option target="ft_select"/>
 		</Unit>

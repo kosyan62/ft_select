@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:48:13 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/11 21:53:31 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/11 22:17:34 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ mode_t		get_filetype(char *word)
 {
 	struct stat buf;
 
-	lstat(word, &buf);
-	return (buf.st_mode);
+	if (!lstat(word, &buf))
+		return (buf.st_mode);
+	else return 0;
 
 }
 t_selection *selection_storage(t_selection *obj)

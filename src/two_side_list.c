@@ -18,6 +18,7 @@ t_selection	*add_doubly_list(t_selection *lst, char *word, size_t len)
 	t_selection *p;
 	t_selection *temp;
 
+	new = NULL;
 	new = ft_memalloc(sizeof(t_selection));
 	new->word = word;
 	new->len = len;

@@ -75,6 +75,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_select.dir/includes/libft/long_math.c.o"
   "CMakeFiles/ft_select.dir/includes/libft/percent.c.o"
   "CMakeFiles/ft_select.dir/includes/libft/rounding.c.o"
+  "CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o"
   "CMakeFiles/ft_select.dir/includes/libft/type_c.c.o"
   "CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o"
   "CMakeFiles/ft_select.dir/includes/libft/type_s.c.o"
