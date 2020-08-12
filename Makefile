@@ -1,7 +1,7 @@
 NAME=ft_select
-CFILE=main.c two_side_list.c draw.c support.c select_args.c cursor.c termcap_extra.c
+CFILE=cursor.c draw.c init_and_signals.c main.c select_args.c support_1.c support_2.c termcap_extra.c two_side_list.c
 OFILE=$(CFILE:%.c=%.o)
-CC= gcc -Iincludes/ -Iincludes/libft/ -g
+CC= gcc -Wall -Wextra -Werror -Iincludes/ -Iincludes/libft/ -g
 VPATH= . src/ includes/ includes/libft includes/libft/includes includes/libft/hash_table
 LIB=libft.a
 LIB_PATH=includes/libft/

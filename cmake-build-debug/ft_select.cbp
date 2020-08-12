@@ -325,9 +325,6 @@
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/rounding.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/termcap_extra.c">
-			<Option target="ft_select"/>
-		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/includes/libft/type_c.c">
 			<Option target="ft_select"/>
 		</Unit>
@@ -343,13 +340,19 @@
 		<Unit filename="/Users/mgena/projects/ft_select/src/draw.c">
 			<Option target="ft_select"/>
 		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/src/init_and_signals.c">
+			<Option target="ft_select"/>
+		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/main.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/select_args.c">
 			<Option target="ft_select"/>
 		</Unit>
-		<Unit filename="/Users/mgena/projects/ft_select/src/support.c">
+		<Unit filename="/Users/mgena/projects/ft_select/src/support_1.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/src/support_2.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/termcap_extra.c">

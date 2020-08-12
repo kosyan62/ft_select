@@ -2175,33 +2175,6 @@ includes/libft/rounding.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/rounding.c.s
 .PHONY : includes/libft/rounding.c.s
 
-includes/libft/termcap_extra.o: includes/libft/termcap_extra.c.o
-
-.PHONY : includes/libft/termcap_extra.o
-
-# target to build an object file
-includes/libft/termcap_extra.c.o:
-	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o
-.PHONY : includes/libft/termcap_extra.c.o
-
-includes/libft/termcap_extra.i: includes/libft/termcap_extra.c.i
-
-.PHONY : includes/libft/termcap_extra.i
-
-# target to preprocess a source file
-includes/libft/termcap_extra.c.i:
-	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i
-.PHONY : includes/libft/termcap_extra.c.i
-
-includes/libft/termcap_extra.s: includes/libft/termcap_extra.c.s
-
-.PHONY : includes/libft/termcap_extra.s
-
-# target to generate assembly for a file
-includes/libft/termcap_extra.c.s:
-	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s
-.PHONY : includes/libft/termcap_extra.c.s
-
 includes/libft/type_c.o: includes/libft/type_c.c.o
 
 .PHONY : includes/libft/type_c.o
@@ -2337,6 +2310,33 @@ src/draw.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/draw.c.s
 .PHONY : src/draw.c.s
 
+src/init_and_signals.o: src/init_and_signals.c.o
+
+.PHONY : src/init_and_signals.o
+
+# target to build an object file
+src/init_and_signals.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/init_and_signals.c.o
+.PHONY : src/init_and_signals.c.o
+
+src/init_and_signals.i: src/init_and_signals.c.i
+
+.PHONY : src/init_and_signals.i
+
+# target to preprocess a source file
+src/init_and_signals.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/init_and_signals.c.i
+.PHONY : src/init_and_signals.c.i
+
+src/init_and_signals.s: src/init_and_signals.c.s
+
+.PHONY : src/init_and_signals.s
+
+# target to generate assembly for a file
+src/init_and_signals.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/init_and_signals.c.s
+.PHONY : src/init_and_signals.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -2391,32 +2391,59 @@ src/select_args.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/select_args.c.s
 .PHONY : src/select_args.c.s
 
-src/support.o: src/support.c.o
+src/support_1.o: src/support_1.c.o
 
-.PHONY : src/support.o
+.PHONY : src/support_1.o
 
 # target to build an object file
-src/support.c.o:
-	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support.c.o
-.PHONY : src/support.c.o
+src/support_1.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_1.c.o
+.PHONY : src/support_1.c.o
 
-src/support.i: src/support.c.i
+src/support_1.i: src/support_1.c.i
 
-.PHONY : src/support.i
+.PHONY : src/support_1.i
 
 # target to preprocess a source file
-src/support.c.i:
-	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support.c.i
-.PHONY : src/support.c.i
+src/support_1.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_1.c.i
+.PHONY : src/support_1.c.i
 
-src/support.s: src/support.c.s
+src/support_1.s: src/support_1.c.s
 
-.PHONY : src/support.s
+.PHONY : src/support_1.s
 
 # target to generate assembly for a file
-src/support.c.s:
-	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support.c.s
-.PHONY : src/support.c.s
+src/support_1.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_1.c.s
+.PHONY : src/support_1.c.s
+
+src/support_2.o: src/support_2.c.o
+
+.PHONY : src/support_2.o
+
+# target to build an object file
+src/support_2.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_2.c.o
+.PHONY : src/support_2.c.o
+
+src/support_2.i: src/support_2.c.i
+
+.PHONY : src/support_2.i
+
+# target to preprocess a source file
+src/support_2.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_2.c.i
+.PHONY : src/support_2.c.i
+
+src/support_2.s: src/support_2.c.s
+
+.PHONY : src/support_2.s
+
+# target to generate assembly for a file
+src/support_2.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_2.c.s
+.PHONY : src/support_2.c.s
 
 src/termcap_extra.o: src/termcap_extra.c.o
 
@@ -2709,9 +2736,6 @@ help:
 	@echo "... includes/libft/rounding.o"
 	@echo "... includes/libft/rounding.i"
 	@echo "... includes/libft/rounding.s"
-	@echo "... includes/libft/termcap_extra.o"
-	@echo "... includes/libft/termcap_extra.i"
-	@echo "... includes/libft/termcap_extra.s"
 	@echo "... includes/libft/type_c.o"
 	@echo "... includes/libft/type_c.i"
 	@echo "... includes/libft/type_c.s"
@@ -2727,15 +2751,21 @@ help:
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
+	@echo "... src/init_and_signals.o"
+	@echo "... src/init_and_signals.i"
+	@echo "... src/init_and_signals.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/select_args.o"
 	@echo "... src/select_args.i"
 	@echo "... src/select_args.s"
-	@echo "... src/support.o"
-	@echo "... src/support.i"
-	@echo "... src/support.s"
+	@echo "... src/support_1.o"
+	@echo "... src/support_1.i"
+	@echo "... src/support_1.s"
+	@echo "... src/support_2.o"
+	@echo "... src/support_2.i"
+	@echo "... src/support_2.s"
 	@echo "... src/termcap_extra.o"
 	@echo "... src/termcap_extra.i"
 	@echo "... src/termcap_extra.s"

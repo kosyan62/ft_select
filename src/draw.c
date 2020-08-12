@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:49:09 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/11 22:07:39 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/12 19:47:41 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,11 @@ void	set_colour_for_type(int fd, mode_t type)
 		ft_fdprintf(fd, "\e[43m\e[94m");
 	else if (S_ISLNK(type))
 		ft_fdprintf(fd, "{magnetic}");
-//		ft_fdprintf(fd, "l");
 	else if (S_ISSOCK(type))
 		ft_fdprintf(fd, "{magnetic}");
 }
 
-void 	draw_letters(t_selection *selection, t_outputs out, int cur_line, int wide)
+void draw_letters(t_selection *selection, t_outputs out, int wide)
 {
 	if (selection->under_cursor)
 		ft_putstr_fd(out.UL, out.fd);
@@ -64,7 +63,6 @@ void 	draw_letters(t_selection *selection, t_outputs out, int cur_line, int wide
 	ft_putstr_fd(out.NORM, out.fd);
 	while ((wide - selection->len - 1) != 0)
 	{
-//		ft_putchar_fd(' ', out.fd - 1);
 		ft_putstr_fd(out.ND, out.fd);
 		wide--;
 	}
@@ -72,13 +70,12 @@ void 	draw_letters(t_selection *selection, t_outputs out, int cur_line, int wide
 
 void	draw_word(t_selection *selection, int *cur_column, int *cur_line, int cn, t_outputs out)
 {
-	draw_letters(selection, out, *cur_line, (get_winsize().ws_col / cn));
+	draw_letters(selection, out, (get_winsize().ws_col / cn));
 	selection->vert_pos = *cur_line;
 	selection->hor_pos = *cur_column;
 	(*cur_column)++;
 	if (*cur_column == cn)
 	{
-//		ft_fdprintf(out.fd, "\n");
 		ft_putstr_fd(out.DO, out.fd);
 		*cur_column = 0;
 		(*cur_line)++;
@@ -101,7 +98,6 @@ int		get_max_words_len(t_selection *selection)
 			max_len = selection->len;
 		selection = selection->next;
 	}
-//	ft_printf(" %d ", max_len);
 	return (max_len);
 }
 
@@ -124,10 +120,7 @@ int		check_window_size(int len, int fd)
 		return (0);
 	}
 	else
-	{
-//		ft_printf("%d %d %d\n", len, (screen_size + 1) / (len + 1), screen_size);
 		return (screen_size / (len + 1));
-	}
 }
 
 void	draw_selections()

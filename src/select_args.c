@@ -6,21 +6,27 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:46:29 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/11 21:53:31 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/12 20:15:28 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <signal.h>
 #include "header.h"
 
 void 	abort_selections(t_selection **selection, t_outputs out)
 {
-	ft_putstr_fd(out.VE, out.fd);
+	t_selection *unused;
+
+	unused = *selection;
+	ft_fdprintf(out.fd, "%s%s%s", out.VE, out.HO, out.CD);
 	exit(0);
 }
 void	set_selection(t_selection **selection, t_outputs out)
 {
 	t_selection *s;
+	t_outputs unused;
 
+	unused = out;
 	s = *selection;
 	while (!s->under_cursor)
 		s = s->next;
@@ -68,10 +74,8 @@ void 	empty_function()
 {
 }
 
-void 	*get_key(char key[4], int read_bytes)
+void *get_key(char key[4])
 {
-//	ft_printf("\n%d: %d %d %d %d\n", read_bytes, key[0], key[1], key[2], key[3]);
-//	sleep(1);
 	if (!ft_strcmp(key, "\33"))
 		return abort_selections;
 	else if (!ft_strcmp(key, " "))
@@ -92,7 +96,7 @@ void 	*get_key(char key[4], int read_bytes)
 	return empty_function;
 }
 
-char	*choose_args(t_selection *selection, t_outputs out)
+char	*select_args(t_selection *selection, t_outputs out)
 {
 	char	key[4];
 	int		read_bytes;
@@ -106,36 +110,19 @@ char	*choose_args(t_selection *selection, t_outputs out)
 		ft_putstr_fd(out.HO, out.fd);
 		ft_putstr_fd(out.CD, out.fd);
 		draw_selections(selection);
-		ft_putstr_fd(out.VI, out.fd);
 		read_bytes = read(STDIN_FILENO, key, 4);
-		if ((work_funct = get_key(key, read_bytes)) == NULL)
+		if ((work_funct = get_key(key)) == NULL)
 			return (get_args_array(selection));
 		work_funct(&selection, out);
 
 	}
-	return (NULL);
+
 }
 
-char	*select_args(t_selection *selections, t_outputs out)
-{
-	struct termios	tty;
-	struct termios	savetty;
-	char			*res;
-
-	ft_putstr_fd(out.CL, out.fd);
-	ft_putstr_fd(out.SC, out.fd);
-	if (!(isatty(0)))
-	{
-		ft_printf("stdin not terminal\n");
-		exit(1);
-	}
-	tcgetattr(0, &tty);
-	savetty = tty;
-	tty.c_lflag &= ~(ICANON | ECHO | ISIG);
-	tty.c_cc[VMIN] = 1;
-	tcsetattr(0, TCSAFLUSH, &tty);
-	res = choose_args(selections, out);
-	ft_fdprintf(out.fd, "%s%s%s", out.VE, out.HO, out.CD);
-	tcsetattr(0, TCSAFLUSH, &savetty);
-	return (res);
-}
+//char	*select_args(t_selection *selections, t_outputs out)
+//{
+//	char			*res;
+//
+//	res = choose_args(selections, out);
+//	return (res);
+//}

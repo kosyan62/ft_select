@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 14:46:37 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/11 20:20:00 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/12 19:47:43 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 t_selection *move_display_left(t_selection *selection)
 {
 	t_selection *tmp;
-
 	tmp = selection;
 	while (tmp->vert_pos != -1)
 	{
@@ -28,7 +27,9 @@ t_selection *move_display_left(t_selection *selection)
 void	move_cursor_right(t_selection **selection, t_outputs out)
 {
 	t_selection *cpy;
+	t_outputs unused;
 
+	unused = out;
 	cpy = get_under_cursor(selection);
 	cpy->under_cursor = false;
 	cpy->next->under_cursor = true;
@@ -39,7 +40,9 @@ void	move_cursor_right(t_selection **selection, t_outputs out)
 void	move_cursor_left(t_selection **selection, t_outputs out)
 {
 	t_selection *cpy;
+	t_outputs unused;
 
+	unused = out;
 	cpy = get_under_cursor(selection);
 	cpy->under_cursor = false;
 	cpy->prev->under_cursor = true;
@@ -100,7 +103,9 @@ void 	move_cursor_up(t_selection **selection, t_outputs out)
 	int to_find_vert;
 	int to_find_hor;
 	t_selection *cpy;
+	t_outputs unused;
 
+	unused = out;
 	cpy = get_under_cursor(selection);
 	if (cpy->vert_pos == 0)
 	{
@@ -113,7 +118,6 @@ void 	move_cursor_up(t_selection **selection, t_outputs out)
 		set_cursor_on_pos(cpy, to_find_hor, to_find_vert);
 	}
 }
-
 
 void delete_elem(t_selection **selection, t_outputs out)
 {

@@ -1045,22 +1045,9 @@ CMakeFiles/ft_select.dir/includes/libft/rounding.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/includes/libft/rounding.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/includes/libft/rounding.c -o CMakeFiles/ft_select.dir/includes/libft/rounding.c.s
 
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: CMakeFiles/ft_select.dir/flags.make
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o: ../includes/libft/termcap_extra.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o   -c /Users/mgena/projects/ft_select/includes/libft/termcap_extra.c
-
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mgena/projects/ft_select/includes/libft/termcap_extra.c > CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.i
-
-CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/includes/libft/termcap_extra.c -o CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.s
-
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.o: ../includes/libft/type_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ft_select.dir/includes/libft/type_c.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ft_select.dir/includes/libft/type_c.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/includes/libft/type_c.c.o   -c /Users/mgena/projects/ft_select/includes/libft/type_c.c
 
 CMakeFiles/ft_select.dir/includes/libft/type_c.c.i: cmake_force
@@ -1073,7 +1060,7 @@ CMakeFiles/ft_select.dir/includes/libft/type_c.c.s: cmake_force
 
 CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o: ../includes/libft/type_i_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o   -c /Users/mgena/projects/ft_select/includes/libft/type_i_d.c
 
 CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.i: cmake_force
@@ -1086,7 +1073,7 @@ CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.s: cmake_force
 
 CMakeFiles/ft_select.dir/includes/libft/type_s.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/includes/libft/type_s.c.o: ../includes/libft/type_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ft_select.dir/includes/libft/type_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ft_select.dir/includes/libft/type_s.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/includes/libft/type_s.c.o   -c /Users/mgena/projects/ft_select/includes/libft/type_s.c
 
 CMakeFiles/ft_select.dir/includes/libft/type_s.c.i: cmake_force
@@ -1099,7 +1086,7 @@ CMakeFiles/ft_select.dir/includes/libft/type_s.c.s: cmake_force
 
 CMakeFiles/ft_select.dir/src/cursor.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/src/cursor.c.o: ../src/cursor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ft_select.dir/src/cursor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ft_select.dir/src/cursor.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/cursor.c.o   -c /Users/mgena/projects/ft_select/src/cursor.c
 
 CMakeFiles/ft_select.dir/src/cursor.c.i: cmake_force
@@ -1112,7 +1099,7 @@ CMakeFiles/ft_select.dir/src/cursor.c.s: cmake_force
 
 CMakeFiles/ft_select.dir/src/draw.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/src/draw.c.o: ../src/draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ft_select.dir/src/draw.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ft_select.dir/src/draw.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/draw.c.o   -c /Users/mgena/projects/ft_select/src/draw.c
 
 CMakeFiles/ft_select.dir/src/draw.c.i: cmake_force
@@ -1125,7 +1112,7 @@ CMakeFiles/ft_select.dir/src/draw.c.s: cmake_force
 
 CMakeFiles/ft_select.dir/src/main.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ft_select.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ft_select.dir/src/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/main.c.o   -c /Users/mgena/projects/ft_select/src/main.c
 
 CMakeFiles/ft_select.dir/src/main.c.i: cmake_force
@@ -1138,7 +1125,7 @@ CMakeFiles/ft_select.dir/src/main.c.s: cmake_force
 
 CMakeFiles/ft_select.dir/src/select_args.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/src/select_args.c.o: ../src/select_args.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/ft_select.dir/src/select_args.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ft_select.dir/src/select_args.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/select_args.c.o   -c /Users/mgena/projects/ft_select/src/select_args.c
 
 CMakeFiles/ft_select.dir/src/select_args.c.i: cmake_force
@@ -1149,22 +1136,22 @@ CMakeFiles/ft_select.dir/src/select_args.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/select_args.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/select_args.c -o CMakeFiles/ft_select.dir/src/select_args.c.s
 
-CMakeFiles/ft_select.dir/src/support.c.o: CMakeFiles/ft_select.dir/flags.make
-CMakeFiles/ft_select.dir/src/support.c.o: ../src/support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/ft_select.dir/src/support.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/support.c.o   -c /Users/mgena/projects/ft_select/src/support.c
+CMakeFiles/ft_select.dir/src/support_1.c.o: CMakeFiles/ft_select.dir/flags.make
+CMakeFiles/ft_select.dir/src/support_1.c.o: ../src/support_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/ft_select.dir/src/support_1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/support_1.c.o   -c /Users/mgena/projects/ft_select/src/support_1.c
 
-CMakeFiles/ft_select.dir/src/support.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_select.dir/src/support.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mgena/projects/ft_select/src/support.c > CMakeFiles/ft_select.dir/src/support.c.i
+CMakeFiles/ft_select.dir/src/support_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_select.dir/src/support_1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mgena/projects/ft_select/src/support_1.c > CMakeFiles/ft_select.dir/src/support_1.c.i
 
-CMakeFiles/ft_select.dir/src/support.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/support.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/support.c -o CMakeFiles/ft_select.dir/src/support.c.s
+CMakeFiles/ft_select.dir/src/support_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/support_1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/support_1.c -o CMakeFiles/ft_select.dir/src/support_1.c.s
 
 CMakeFiles/ft_select.dir/src/termcap_extra.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/src/termcap_extra.c.o: ../src/termcap_extra.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ft_select.dir/src/termcap_extra.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/ft_select.dir/src/termcap_extra.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/termcap_extra.c.o   -c /Users/mgena/projects/ft_select/src/termcap_extra.c
 
 CMakeFiles/ft_select.dir/src/termcap_extra.c.i: cmake_force
@@ -1177,7 +1164,7 @@ CMakeFiles/ft_select.dir/src/termcap_extra.c.s: cmake_force
 
 CMakeFiles/ft_select.dir/src/two_side_list.c.o: CMakeFiles/ft_select.dir/flags.make
 CMakeFiles/ft_select.dir/src/two_side_list.c.o: ../src/two_side_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/ft_select.dir/src/two_side_list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ft_select.dir/src/two_side_list.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/two_side_list.c.o   -c /Users/mgena/projects/ft_select/src/two_side_list.c
 
 CMakeFiles/ft_select.dir/src/two_side_list.c.i: cmake_force
@@ -1187,6 +1174,32 @@ CMakeFiles/ft_select.dir/src/two_side_list.c.i: cmake_force
 CMakeFiles/ft_select.dir/src/two_side_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/two_side_list.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/two_side_list.c -o CMakeFiles/ft_select.dir/src/two_side_list.c.s
+
+CMakeFiles/ft_select.dir/src/support_2.c.o: CMakeFiles/ft_select.dir/flags.make
+CMakeFiles/ft_select.dir/src/support_2.c.o: ../src/support_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/ft_select.dir/src/support_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/support_2.c.o   -c /Users/mgena/projects/ft_select/src/support_2.c
+
+CMakeFiles/ft_select.dir/src/support_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_select.dir/src/support_2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mgena/projects/ft_select/src/support_2.c > CMakeFiles/ft_select.dir/src/support_2.c.i
+
+CMakeFiles/ft_select.dir/src/support_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/support_2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/support_2.c -o CMakeFiles/ft_select.dir/src/support_2.c.s
+
+CMakeFiles/ft_select.dir/src/init_and_signals.c.o: CMakeFiles/ft_select.dir/flags.make
+CMakeFiles/ft_select.dir/src/init_and_signals.c.o: ../src/init_and_signals.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/ft_select.dir/src/init_and_signals.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_select.dir/src/init_and_signals.c.o   -c /Users/mgena/projects/ft_select/src/init_and_signals.c
+
+CMakeFiles/ft_select.dir/src/init_and_signals.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_select.dir/src/init_and_signals.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mgena/projects/ft_select/src/init_and_signals.c > CMakeFiles/ft_select.dir/src/init_and_signals.c.i
+
+CMakeFiles/ft_select.dir/src/init_and_signals.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_select.dir/src/init_and_signals.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mgena/projects/ft_select/src/init_and_signals.c -o CMakeFiles/ft_select.dir/src/init_and_signals.c.s
 
 # Object files for target ft_select
 ft_select_OBJECTS = \
@@ -1266,7 +1279,6 @@ ft_select_OBJECTS = \
 "CMakeFiles/ft_select.dir/includes/libft/long_math.c.o" \
 "CMakeFiles/ft_select.dir/includes/libft/percent.c.o" \
 "CMakeFiles/ft_select.dir/includes/libft/rounding.c.o" \
-"CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o" \
 "CMakeFiles/ft_select.dir/includes/libft/type_c.c.o" \
 "CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o" \
 "CMakeFiles/ft_select.dir/includes/libft/type_s.c.o" \
@@ -1274,9 +1286,11 @@ ft_select_OBJECTS = \
 "CMakeFiles/ft_select.dir/src/draw.c.o" \
 "CMakeFiles/ft_select.dir/src/main.c.o" \
 "CMakeFiles/ft_select.dir/src/select_args.c.o" \
-"CMakeFiles/ft_select.dir/src/support.c.o" \
+"CMakeFiles/ft_select.dir/src/support_1.c.o" \
 "CMakeFiles/ft_select.dir/src/termcap_extra.c.o" \
-"CMakeFiles/ft_select.dir/src/two_side_list.c.o"
+"CMakeFiles/ft_select.dir/src/two_side_list.c.o" \
+"CMakeFiles/ft_select.dir/src/support_2.c.o" \
+"CMakeFiles/ft_select.dir/src/init_and_signals.c.o"
 
 # External object files for target ft_select
 ft_select_EXTERNAL_OBJECTS =
@@ -1357,7 +1371,6 @@ ft_select: CMakeFiles/ft_select.dir/includes/libft/ldbl_extract.c.o
 ft_select: CMakeFiles/ft_select.dir/includes/libft/long_math.c.o
 ft_select: CMakeFiles/ft_select.dir/includes/libft/percent.c.o
 ft_select: CMakeFiles/ft_select.dir/includes/libft/rounding.c.o
-ft_select: CMakeFiles/ft_select.dir/includes/libft/termcap_extra.c.o
 ft_select: CMakeFiles/ft_select.dir/includes/libft/type_c.c.o
 ft_select: CMakeFiles/ft_select.dir/includes/libft/type_i_d.c.o
 ft_select: CMakeFiles/ft_select.dir/includes/libft/type_s.c.o
@@ -1365,12 +1378,14 @@ ft_select: CMakeFiles/ft_select.dir/src/cursor.c.o
 ft_select: CMakeFiles/ft_select.dir/src/draw.c.o
 ft_select: CMakeFiles/ft_select.dir/src/main.c.o
 ft_select: CMakeFiles/ft_select.dir/src/select_args.c.o
-ft_select: CMakeFiles/ft_select.dir/src/support.c.o
+ft_select: CMakeFiles/ft_select.dir/src/support_1.c.o
 ft_select: CMakeFiles/ft_select.dir/src/termcap_extra.c.o
 ft_select: CMakeFiles/ft_select.dir/src/two_side_list.c.o
+ft_select: CMakeFiles/ft_select.dir/src/support_2.c.o
+ft_select: CMakeFiles/ft_select.dir/src/init_and_signals.c.o
 ft_select: CMakeFiles/ft_select.dir/build.make
 ft_select: CMakeFiles/ft_select.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking C executable ft_select"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mgena/projects/ft_select/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking C executable ft_select"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_select.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
