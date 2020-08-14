@@ -97,4 +97,4 @@ add_executable(ft_select
         src/select_args.c
         src/support_1.c
         src/termcap_extra.c
-        src/two_side_list.c src/support_2.c src/init_and_signals.c)
+        src/two_side_list.c src/support_2.c src/init_and_signals.c src/cursor_more.c src/support_3.c)

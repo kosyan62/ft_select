@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/16 16:36:36 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/12 20:09:12 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 18:29:15 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,12 @@ void		ft_select(int argc, char **argv)
 {
 	t_selection *arguments;
 	char		*selections;
-	t_outputs	out;
 
-	out = main_init();
+	main_init();
 	arguments = get_arguments(argc, argv);
-	selections = select_args(arguments, out);
-	return_tty(out);
+	selection_storage(arguments);
+	selections = select_args(arguments);
+	return_tty();
 	ft_printf("%s", selections);
 	free(selections);
 }

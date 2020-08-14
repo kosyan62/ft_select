@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:48:13 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/12 20:01:14 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 18:28:51 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,13 +41,4 @@ t_selection	*selection_storage(t_selection *obj)
 	else
 		storage = obj;
 	return (NULL);
-}
-
-t_outputs	out_storage(t_outputs *obj)
-{
-	static t_outputs storage;
-
-	if (obj != NULL)
-		storage = *obj;
-	return (storage);
 }

@@ -2283,6 +2283,33 @@ src/cursor.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/cursor.c.s
 .PHONY : src/cursor.c.s
 
+src/cursor_more.o: src/cursor_more.c.o
+
+.PHONY : src/cursor_more.o
+
+# target to build an object file
+src/cursor_more.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/cursor_more.c.o
+.PHONY : src/cursor_more.c.o
+
+src/cursor_more.i: src/cursor_more.c.i
+
+.PHONY : src/cursor_more.i
+
+# target to preprocess a source file
+src/cursor_more.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/cursor_more.c.i
+.PHONY : src/cursor_more.c.i
+
+src/cursor_more.s: src/cursor_more.c.s
+
+.PHONY : src/cursor_more.s
+
+# target to generate assembly for a file
+src/cursor_more.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/cursor_more.c.s
+.PHONY : src/cursor_more.c.s
+
 src/draw.o: src/draw.c.o
 
 .PHONY : src/draw.o
@@ -2444,6 +2471,33 @@ src/support_2.s: src/support_2.c.s
 src/support_2.c.s:
 	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_2.c.s
 .PHONY : src/support_2.c.s
+
+src/support_3.o: src/support_3.c.o
+
+.PHONY : src/support_3.o
+
+# target to build an object file
+src/support_3.c.o:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_3.c.o
+.PHONY : src/support_3.c.o
+
+src/support_3.i: src/support_3.c.i
+
+.PHONY : src/support_3.i
+
+# target to preprocess a source file
+src/support_3.c.i:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_3.c.i
+.PHONY : src/support_3.c.i
+
+src/support_3.s: src/support_3.c.s
+
+.PHONY : src/support_3.s
+
+# target to generate assembly for a file
+src/support_3.c.s:
+	$(MAKE) -f CMakeFiles/ft_select.dir/build.make CMakeFiles/ft_select.dir/src/support_3.c.s
+.PHONY : src/support_3.c.s
 
 src/termcap_extra.o: src/termcap_extra.c.o
 
@@ -2748,6 +2802,9 @@ help:
 	@echo "... src/cursor.o"
 	@echo "... src/cursor.i"
 	@echo "... src/cursor.s"
+	@echo "... src/cursor_more.o"
+	@echo "... src/cursor_more.i"
+	@echo "... src/cursor_more.s"
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
@@ -2766,6 +2823,9 @@ help:
 	@echo "... src/support_2.o"
 	@echo "... src/support_2.i"
 	@echo "... src/support_2.s"
+	@echo "... src/support_3.o"
+	@echo "... src/support_3.i"
+	@echo "... src/support_3.s"
 	@echo "... src/termcap_extra.o"
 	@echo "... src/termcap_extra.i"
 	@echo "... src/termcap_extra.s"

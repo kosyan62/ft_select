@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/01 14:53:03 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/12 20:05:53 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 15:09:51 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,20 @@ t_selection	*add_doubly_list(t_selection *lst, char *word, size_t len)
 	new->next = lst;
 	p->next = new;
 	return (lst);
+}
+
+void		delete_elem(t_selection **selection)
+{
+	t_selection *cpy;
+
+	cpy = *selection;
+	while (!cpy->under_cursor)
+		cpy = cpy->next;
+	if (cpy == *selection)
+		*selection = cpy->next;
+	cpy->next->under_cursor = true;
+	if (del_double_list_item(cpy))
+		escape();
 }
 
 int			del_double_list_item(t_selection *lst)

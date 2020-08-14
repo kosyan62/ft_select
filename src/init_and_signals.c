@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/12 20:11:06 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/12 20:13:13 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 20:01:01 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,22 +24,30 @@ void		init_signals(void)
 	signal(SIGCONT, sighandler);
 }
 
+void change_first_selection()
+{
+	t_selection *selection;
+
+	selection = selection_storage(NULL);
+	while (!selection->under_cursor)
+		selection = selection->next;
+	restore_displayed(selection);
+	selection_storage(selection);
+}
+
 void		sighandler(int sig)
 {
-	t_outputs out;
-
-	out = out_storage(NULL);
 	if (sig == SIGWINCH)
 	{
-		ft_fdprintf(out.fd, "%s%s", out.HO, out.CL);
+		ft_fdprintf(g_out.fd, "%s%s", g_out.move_start, g_out.clear);
 		draw_selections();
 	}
 	else if (sig == SIGINT || sig == SIGABRT || sig == SIGKILL || \
 	sig == SIGSTOP || sig == SIGQUIT)
-		escape(out);
+		escape();
 	else if (sig == SIGTSTP)
 	{
-		return_tty(out);
+		return_tty();
 		signal(SIGTSTP, SIG_DFL);
 		ioctl(STDERR_FILENO, TIOCSTI, "\x1A");
 	}
@@ -47,37 +55,35 @@ void		sighandler(int sig)
 	{
 		main_init();
 		init_signals();
+		change_first_selection();
 		draw_selections();
 	}
 }
 
-t_outputs	main_init(void)
+void		main_init(void)
 {
-	t_outputs		out;
 	struct termios	tty;
 
-	out.fd = open(ttyname(STDIN_FILENO), O_RDWR);
-	tinit(&out);
-	ft_putstr_fd(out.CL, out.fd);
-	ft_putstr_fd(out.SC, out.fd);
-	ft_putstr_fd(out.VI, out.fd);
+	g_out.fd = open(ttyname(STDIN_FILENO), O_RDWR);
+	tinit();
+	ft_putstr_fd(g_out.clear, g_out.fd);
+	ft_putstr_fd(g_out.hide_cursor, g_out.fd);
 	if (!(isatty(0)))
 	{
 		ft_printf("stdin not terminal\n");
 		exit(1);
 	}
 	tcgetattr(0, &tty);
-	out.savetty = tty;
+	g_out.savetty = tty;
 	tty.c_lflag &= ~(ICANON | ECHO);
 	tty.c_cc[VMIN] = 1;
 	tcsetattr(0, TCSAFLUSH, &tty);
-	out_storage(&out);
-	return (out);
 }
 
-void		return_tty(t_outputs out)
+void		return_tty(void)
 {
-	ft_fdprintf(out.fd, "%s%s%s", out.VE, out.HO, out.CD);
-	tcsetattr(0, TCSAFLUSH, &(out.savetty));
-	close(out.fd);
+	ft_fdprintf(g_out.fd, "%s%s%s", g_out.show_cursor, \
+	g_out.move_start, g_out.clear_after);
+	tcsetattr(0, TCSAFLUSH, &(g_out.savetty));
+	close(g_out.fd);
 }

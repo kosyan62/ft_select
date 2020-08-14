@@ -337,6 +337,9 @@
 		<Unit filename="/Users/mgena/projects/ft_select/src/cursor.c">
 			<Option target="ft_select"/>
 		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/src/cursor_more.c">
+			<Option target="ft_select"/>
+		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/draw.c">
 			<Option target="ft_select"/>
 		</Unit>
@@ -353,6 +356,9 @@
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/support_2.c">
+			<Option target="ft_select"/>
+		</Unit>
+		<Unit filename="/Users/mgena/projects/ft_select/src/support_3.c">
 			<Option target="ft_select"/>
 		</Unit>
 		<Unit filename="/Users/mgena/projects/ft_select/src/termcap_extra.c">

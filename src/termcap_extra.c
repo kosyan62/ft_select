@@ -6,35 +6,33 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/24 14:48:09 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/12 20:06:33 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 18:19:49 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 
-void	set_term_str(t_outputs *out)
+void	set_term_str(void)
 {
-	out->CL = tgetstr("cl", &out->p);
-	out->CD = tgetstr("cd", &out->p);
-	out->RV = tgetstr("mr", &out->p);
-	out->UL = tgetstr("us", &out->p);
-	out->NORM = tgetstr("me", &out->p);
-	out->VI = tgetstr("vi", &out->p);
-	out->VE = tgetstr("ve", &out->p);
-	out->HO = tgetstr("ho", &out->p);
-	out->SC = tgetstr("sc", &out->p);
-	out->RC = tgetstr("rc", &out->p);
-	out->ND = tgetstr("nd", &out->p);
-	out->DO = tgetstr("do", &out->p);
+	g_out.clear = tgetstr("cl", &g_out.p);
+	g_out.clear_after = tgetstr("cd", &g_out.p);
+	g_out.reverse_video = tgetstr("mr", &g_out.p);
+	g_out.underline = tgetstr("us", &g_out.p);
+	g_out.norm = tgetstr("me", &g_out.p);
+	g_out.hide_cursor = tgetstr("vi", &g_out.p);
+	g_out.show_cursor = tgetstr("ve", &g_out.p);
+	g_out.move_start = tgetstr("ho", &g_out.p);
+	g_out.move_right = tgetstr("nd", &g_out.p);
+	g_out.move_down = tgetstr("do", &g_out.p);
 }
 
-void	tinit(t_outputs *out)
+void	tinit()
 {
 	int error;
 
-	out->p = out->strings;
-	out->tname = getenv("TERM");
-	error = tgetent(out->tbuf, out->tname);
+	g_out.p = g_out.strings;
+	g_out.tname = getenv("TERM");
+	error = tgetent(g_out.tbuf, g_out.tname);
 	if (error == -1)
 	{
 		ft_printf("Нет файла TERMCAP\n");
@@ -42,11 +40,11 @@ void	tinit(t_outputs *out)
 	}
 	else if (error == 0)
 	{
-		ft_printf("Терминал %s не описан\n", out->tname);
+		ft_printf("Терминал %s не описан\n", g_out.tname);
 		exit(2);
 	}
 	else if (error == 1)
-		set_term_str(out);
+		set_term_str();
 	else
 	{
 		ft_printf("Unnamed error");
