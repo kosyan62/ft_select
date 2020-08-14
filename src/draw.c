@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:49:09 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/14 20:38:47 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 20:58:24 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	draw_letters(t_selection *selection, int wide)
 		ft_putstr_fd(g_out.underline, g_out.fd);
 	if (selection->selected)
 		ft_putstr_fd(g_out.reverse_video, g_out.fd);
-//	set_colour_for_type(g_out.fd, selection->filetype);
+	set_colour_for_type(g_out.fd, selection->filetype);
 	ft_fdprintf(g_out.fd, "%s{eoc}\e[49m", selection->word);
 	ft_putstr_fd(g_out.norm, g_out.fd);
 	while ((wide - selection->len - 1) != 0)
@@ -94,11 +94,6 @@ void	draw_selections(void)
 	int			cur[2];
 
 	selection = selection_storage(NULL);
-//	if (g_out.flag_was_susp)
-//	{
-//		while (!selection->under_cursor)
-//			selection = selection->next;
-//	}
 	restore_displayed(selection);
 	ft_bzero(cur, sizeof(int) * 2);
 	if (!(column_num = check_winsize(get_max_words_len(selection))))

@@ -6,13 +6,13 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/12 19:55:56 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/14 18:22:07 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 18:22:11 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 
-void			escape()
+void			escape(void)
 {
 	return_tty();
 	exit(0);

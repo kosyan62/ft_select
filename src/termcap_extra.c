@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/24 14:48:09 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/14 18:19:49 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 18:21:00 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	set_term_str(void)
 	g_out.move_down = tgetstr("do", &g_out.p);
 }
 
-void	tinit()
+void	tinit(void)
 {
 	int error;
 

@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/12 20:11:06 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/14 20:01:01 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/14 20:01:50 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,6 @@ void		init_signals(void)
 	signal(SIGWINCH, sighandler);
 	signal(SIGTSTP, sighandler);
 	signal(SIGCONT, sighandler);
-}
-
-void change_first_selection()
-{
-	t_selection *selection;
-
-	selection = selection_storage(NULL);
-	while (!selection->under_cursor)
-		selection = selection->next;
-	restore_displayed(selection);
-	selection_storage(selection);
 }
 
 void		sighandler(int sig)
@@ -55,7 +44,6 @@ void		sighandler(int sig)
 	{
 		main_init();
 		init_signals();
-		change_first_selection();
 		draw_selections();
 	}
 }
