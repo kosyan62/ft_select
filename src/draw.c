@@ -6,7 +6,7 @@
 /*   By: mgena <mgena@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 14:49:09 by mgena             #+#    #+#             */
-/*   Updated: 2020/08/14 20:58:24 by mgena            ###   ########.fr       */
+/*   Updated: 2020/08/16 19:04:42 by mgena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ int		get_max_words_len(t_selection *selection)
 			max_len = selection->len;
 		selection = selection->next;
 	}
-	return (max_len);
+	return (max_len > 2 ? max_len : 3);
 }
 
 void	draw_selections(void)
