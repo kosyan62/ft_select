@@ -14,7 +14,9 @@ cd ft_select && make
 При нажатии Enter на вывод отправляются выбранные аргументы, разделенные пробелом
 Поддерживается остановка, используя ctrl+Z и дальнейшая работа после fg
 ### • Примеры использования
-
+![use](https://github.com/kosyan62/ft_select/blob/master/screenshots/use.png)
+![more choise](https://github.com/kosyan62/ft_select/blob/master/screenshots/more_choise.png)
+![choise](https://github.com/kosyan62/ft_select/blob/master/screenshots/choise.png)
 
 
 • Не выбранный элемент - обычный текст
