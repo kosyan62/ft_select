@@ -1,27 +1,41 @@
+include includes/libft/libft/libft.mk
+
 NAME=ft_select
-CFILE=cursor.c cursor_more.c draw.c init_and_signals.c main.c select_args.c\
-support_1.c support_2.c support_3.c termcap_extra.c two_side_list.c
-OFILE=$(CFILE:%.c=%.o)
-CC= gcc -Wall -Wextra -Werror -Iincludes/ -Iincludes/libft/ -g
-VPATH= . src/ includes/ includes/libft includes/libft/includes includes/libft/hash_table
-LIB=libft.a
-LIB_PATH=includes/libft/
+
+SRC_DIR = src
+SRCS := $(shell find $(SRC_DIR) -name "*.c")
 
 
-all: $(NAME)
+BUILD_DIR = build
+OBJS := $(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(SRCS))
 
-$(NAME): $(LIB) $(OFILE)
-	$(CC) $(LIB_PATH)$(LIB) $(OFILE) -o $(NAME) -ltermcap
-%.o: %.c
-	$(CC) -I$(LIB_PATH)$(LIB) -c $< -o $@
-$(LIB):
-	$(MAKE) -C $(LIB_PATH)
+INC = -I includes $LIBFT_INC
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+
+all: setup $(NAME)
+
+setup:
+	@mkdir -p $(sort $(dir $(OBJS)))
+
+$(NAME): $(LIBFT_LIB) $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^ $(LIBFT_LNK)
+
+$(LIBFT_LIB):
+	@make -C $(LIBFT_PATH)
+
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
+	$(CC) $(CFLAGS) $(INC) -c $< -o $@
+
 clean:
-	rm -f $(OFILE)
-	@make -C $(LIB_PATH) clean
+	rm -rf $(BUILD_DIR)
+	@make -C $(LIBFT_PATH) clean
+
 fclean: clean
 	rm -f $(NAME)
-	@make -C $(LIB_PATH) fclean
-norm: $(NAME)
-	norminette */**.c */**.h
+	@make -C $(LIBFT_PATH) fclean
+
 re: fclean all
+
+.PHONY: clean fclean re setup all
