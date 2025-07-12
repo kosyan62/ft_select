@@ -9,7 +9,7 @@ SRCS := $(shell find $(SRC_DIR) -name "*.c")
 BUILD_DIR = build
 OBJS := $(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(SRCS))
 
-INC = -I includes $LIBFT_INC
+INC = -I includes $(LIBFT_INC)
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -20,7 +20,7 @@ setup:
 	@mkdir -p $(sort $(dir $(OBJS)))
 
 $(NAME): $(LIBFT_LIB) $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^ $(LIBFT_LNK)
+	$(CC) $(CFLAGS) -o $@ $^ $(LIBFT_LNK) -ltermcap
 
 $(LIBFT_LIB):
 	@make -C $(LIBFT_PATH)

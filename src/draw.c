@@ -12,7 +12,9 @@
 
 #include "header.h"
 
-void	set_colour_for_type(int fd, mode_t type)
+t_outputs	g_out;
+
+void		set_colour_for_type(int fd, mode_t type)
 {
 	if (S_ISREG(type))
 	{
@@ -37,7 +39,7 @@ void	set_colour_for_type(int fd, mode_t type)
 		ft_fdprintf(fd, "{magnetic}");
 }
 
-void	draw_letters(t_selection *selection, int wide)
+void		draw_letters(t_selection *selection, int wide)
 {
 	if (selection->under_cursor)
 		ft_putstr_fd(g_out.underline, g_out.fd);
@@ -53,7 +55,7 @@ void	draw_letters(t_selection *selection, int wide)
 	}
 }
 
-void	draw_word(t_selection *selection, int *cur, int cn)
+void		draw_word(t_selection *selection, int *cur, int cn)
 {
 	draw_letters(selection, (get_winsize().ws_col / cn));
 	selection->vert_pos = cur[0];
@@ -69,7 +71,7 @@ void	draw_word(t_selection *selection, int *cur, int cn)
 		ft_fdprintf(g_out.fd, " ");
 }
 
-int		get_max_words_len(t_selection *selection)
+int			get_max_words_len(t_selection *selection)
 {
 	t_selection	*first;
 	int			max_len;
@@ -86,7 +88,7 @@ int		get_max_words_len(t_selection *selection)
 	return (max_len > 2 ? max_len : 3);
 }
 
-void	draw_selections(void)
+void		draw_selections(void)
 {
 	t_selection *selection;
 	t_selection *first;

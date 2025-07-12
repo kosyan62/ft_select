@@ -56,7 +56,7 @@ typedef struct	s_selection
 	struct s_selection	*prev;
 }				t_selection;
 
-t_outputs		g_out;
+extern t_outputs		g_out;
 
 t_selection		*add_doubly_list(t_selection *lst, char *word, size_t len);
 int				del_double_list_item(t_selection *lst);
