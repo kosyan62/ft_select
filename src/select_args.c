@@ -12,11 +12,8 @@
 
 #include "header.h"
 
-void	abort_selections(t_selection **selection)
+void	abort_selections(t_selection **selection __attribute__((unused)))
 {
-	t_selection *garbage;
-
-	garbage = *selection;
 	ft_fdprintf(g_out.fd, "%s%s%s", g_out.show_cursor, \
 	g_out.move_start, g_out.clear_after);
 	exit(0);

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "header.h"
+#include <signal.h>
 
 void		init_signals(void)
 {
