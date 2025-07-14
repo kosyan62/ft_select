@@ -1,4 +1,5 @@
 [![42](https://img.shields.io/badge/-Project-black?logo=42&logoColor=white)](https://42.fr/)
+[![Test](https://github.com/kosyan62/ft_select/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/kosyan62/ft_select/actions/workflows/c-cpp.yml)
 ![C](https://img.shields.io/badge/Language-%2300599C.svg?logo=c&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 
