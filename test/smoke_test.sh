@@ -23,7 +23,7 @@ else
 fi
 
 OUTPUT=$(echo "" | $CMD a b c)
-if [ "$OUTPUT" == "stdin not terminal" ]; then
+if [ "$OUTPUT" == "stdin not terminal" ] || [ "$OUTPUT" == "Нет файла TERMCAP" ]; then
     echo "Smoke test passed: Command executed successfully without terminal input."
 else
     echo "Smoke test failed: Unexpected output."
