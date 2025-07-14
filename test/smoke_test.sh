@@ -1,6 +1,6 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-CMD="$SCRIPT_DIR/../ft_select"
+CMD="$SCRIPT_DIR/../ft_select/ft_select"
 if [ ! -f "$CMD" ]; then
     echo "Error: $CMD not found. Please build the project first."
     exit 1

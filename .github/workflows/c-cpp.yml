@@ -18,10 +18,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ft_select
-          key: executable-${{ hashFiles('**/*') }}
+          key: executable-${{ hashFiles('ft_select/**/*') }}
       - name : Build executable
         if: steps.cache-executable.outputs.cache-hit != 'true'
-        run: make
+        run: make -C ft_select
 
   test:
     runs-on: ubuntu-latest
@@ -32,5 +32,5 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: ft_select
-          key: executable-${{ hashFiles('**/*') }}
+          key: executable-${{ hashFiles('ft_select/**/*') }}
       - run: ./test/smoke_test.sh
